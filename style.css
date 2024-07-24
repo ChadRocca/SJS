@@ -14,7 +14,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(6px);
+    filter: blur(7px);
 }
 .video-container {
     width: 100%;
@@ -141,3 +141,25 @@ body {
 .data:last-child {
     border-right: none;
 }
+
+.profile-card {
+        animation: 3.5s ease fade-in-down, 3s ease-in-out 6s infinite floating;
+    }
+
+@keyframes fade-in-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+@keyframes floating {
+        0% { transform: translate(0, 0px); }
+        50% { transform: translate(0, 10px); }
+        100% { transform: translate(0, -0px); }
+    }
+
